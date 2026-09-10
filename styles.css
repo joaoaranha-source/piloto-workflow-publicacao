@@ -45,6 +45,8 @@ h2 { margin-bottom: 10px; font-size: 1.35rem; letter-spacing: -0.03em; }
 .hero-text { max-width: 640px; color: var(--muted); font-size: 1.15rem; }
 .button { display: inline-block; border: 0; border-radius: 999px; padding: 12px 20px; color: #fff; background: var(--accent); font: inherit; font-weight: 750; text-decoration: none; cursor: pointer; }
 .button:hover { background: var(--accent-dark); }
+.release-note { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: baseline; margin: 0 0 18px; border-left: 4px solid var(--accent); padding: 15px 18px; background: #fff2ed; }
+.release-note span { color: var(--muted); }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .card, .demo-form, .note { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
 .card { min-height: 190px; padding: 26px; }
