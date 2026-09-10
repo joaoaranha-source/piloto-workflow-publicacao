@@ -1,0 +1,13 @@
+# Arquivos locais e temporários
+.DS_Store
+Thumbs.db
+
+# Configurações e segredos locais
+.env
+.env.*
+!.env.example
+
+# Saídas comuns de ferramentas
+node_modules/
+dist/
+build/
