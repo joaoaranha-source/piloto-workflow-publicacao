@@ -50,6 +50,12 @@ h2 { margin-bottom: 10px; font-size: 1.35rem; letter-spacing: -0.03em; }
 .card { min-height: 190px; padding: 26px; }
 .card-number { color: var(--accent-dark); font-size: 0.8rem; font-weight: 800; }
 .card p, .page-content > p { color: var(--muted); }
+.workflow { margin-top: 18px; border: 1px solid var(--line); border-radius: 18px; padding: 32px; background: var(--ink); color: #fff; }
+.workflow h2 { margin-bottom: 22px; }
+.workflow ol { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 0; padding: 0; list-style: none; counter-reset: steps; }
+.workflow li { display: grid; gap: 5px; counter-increment: steps; }
+.workflow li::before { content: "0" counter(steps); color: #ffb29f; font-size: 0.8rem; font-weight: 800; }
+.workflow li span { color: #cbd8e1; }
 .demo-form { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 18px; padding: 32px; }
 form { display: grid; align-content: center; gap: 10px; }
 label { font-weight: 700; }
@@ -67,4 +73,5 @@ input { width: 100%; border: 1px solid var(--line); border-radius: 10px; padding
   main { padding-top: 28px; }
   .hero { padding: 42px 0 58px; }
   .cards, .demo-form { grid-template-columns: 1fr; }
+  .workflow ol { grid-template-columns: 1fr; }
 }
